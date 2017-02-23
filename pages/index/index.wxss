@@ -1,0 +1,57 @@
+/**index.wxss**/
+
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.nowCity, .nowType , .nowTem {
+    display:flex;
+    justify-content:center;
+}
+.nowCity {
+    font-family: fantasy;
+    font-size:2.5em;
+}
+.nowType {
+    margin-top:5rpx;
+    font-size:1.5em;
+}
+.nowTem {
+    font-size:5em;
+    padding-left:160rpx;
+}
+.todaydetail {
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+    margin:25rpx 0;
+}
+.left{
+    display:flex;
+}
+.today{
+    margin-left:25rpx
+}
+.right{
+    width:20%;
+    display:flex;
+    justify-content:space-around;
+}
+.suggestion{
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    padding:15rpx;
+    font-size: 0.8em;
+}
+.typeImage{
+    width:54rpx;
+    height:54rpx;
+}
+.day{
+    background-image:url("../../image/qing4.png");
+}
+.night{
+    background-image:url("../../image/yin.png");
+    background-size:100% 100%;
+}

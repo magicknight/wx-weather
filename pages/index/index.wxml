@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container {{sun? 'day':'night'}}" >
+    <view class="header">
+        <text class='nowCity'>{{localCity}}</text>
+        <text class='nowType'>{{weather[0].type}}</text>
+        <text class='nowTem'>{{nowTem}}</text>
+    </view>
+    <view class="todaydetail">
+        <view class='left'>
+            <text>{{weather[0].week}}</text>
+            <text class='today'>今天</text>
+        </view>
+        <view class='right'>
+            <text>{{weather[0].highTem}}</text>
+            <text>{{weather[0].lowTem}}</text>
+        </view>
+    </view>
+    <view class='suggestion'>
+        <text > 友情提示：{{suggestion}}</text>
+    </view>
+    <view class='todaydetail' wx:for='{{weatherFuture}}'>
+        <view class='left'>
+            <text>{{item.week}}</text>
+        </view>
+        <image class='typeImage'mode='aspectFit' src="../../weatherImage/{{item.typeImage}}"></image>
+        <view class='right'>
+            <text>{{item.highTem}}</text>
+            <text>{{item.lowTem}}</text>
+        </view>
+    </view>
+</view>
